@@ -1,0 +1,21 @@
+[package]
+name = "aoc-2021"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = { version="0.3", features=["html_reports"] }
+
+[[bench]]
+name = "aoc_benches"
+harness = false
+
+[lib]
+bench = false
+
+[[bin]]
+name = "aoc-2021"
+path = "src/main.rs"
+bench = false
